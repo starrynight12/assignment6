@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoha Zainab Akbarzadeh</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <img src="android-chrome-192x192.png" alt="zza logo"/>
+        <h1>Zoha Zainab Akbarzadeh</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+    <p>
+        
+    </p>
+    <main>
+        <section>
+            <h2>Special Order</h2>
+            <article>
+                <h3></h3>
+                <form action="/placeOrder" method="POST">
+                    <fieldset>
+                        <legend>Place an order:</legend>
+                    
+                                        
+                        <label for="amount" class="required">
+                            How many? (Max: 250)
+                            <input 
+                                type="number" 
+                                placeholder="#" 
+                                name="amount" 
+                                id="amount" 
+                                max="250"
+                                required>
+                            </label>
+
+                            <label for="base">Base type (previously what)</label>
+                            <select name="base" id="base">
+                                <option value="Chocolate" selected>Chocolate</option>
+                                <option value="Vanilla">Vanilla</option>
+                                <option value="Milk">Milk</option>
+                                <option value="Colored">Colored (specify in comments)</option>
+                            </select>
+
+                            <label for="filling">Filling type</label>
+                            <select name="filling" id="filling">
+                                <option value="Coffee" selected>Coffee</option>
+                                <option value="Chocolate">Chocolate</option>
+                                <option value="Classic">Classic</option>
+                                <option value="Lemon">Lemon</option>
+                            </select>
+
+                            <label for="size">Size</label>
+                            <select name="size" id="size">
+                                <option value="Small Square" selected>Small square</option>
+                                <option value="Small Cup">Small cup</option>
+                                <option value="Medium Octagon">Medium Octagon</option>
+                                <option value="Custom">Custom (specify in comments)</option>
+                            </select>
+
+
+                        <!--text block input-->
+                        <label for="comments">Extra specifications:</label>
+                        <textarea 
+                            name="comments" 
+                            id="comments" 
+                            minlenth="1" 
+                            maxlenth="300" 
+                            placeholder="Please type your message here. (Note that it could affect cost.) Max 300 characters." 
+                            aria-required="true"
+                        ></textarea>
+                        <button type="submit">Place Order &#8594;</button>
+                    </fieldset>
+
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>&copy; 2023 Zoha Zainab Akbarzadeh</footer>
+</body>
+</html>
